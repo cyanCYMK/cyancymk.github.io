@@ -36,8 +36,7 @@ img { border: 0; }
 /* my stuff */
 .main {
  position: relative;
- width: 100vw;
- height: 100vh;
+ min-height: 100vh;
  display: grid;
  grid-template: 1fr / 1fr 1fr;
  --color-1: hsl(22, 61%, 93%);
