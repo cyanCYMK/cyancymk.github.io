@@ -1,3 +1,13 @@
+#secret {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+  z-index: 1000;
+}
+
 /* CSS Mini Reset */
 
 html, body, div, form, fieldset, legend, label
