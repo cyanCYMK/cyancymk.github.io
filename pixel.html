@@ -13,7 +13,12 @@
   <div class="main">
     <input type="file" id="imageInput" accept="image/*" />
     <p id="imageDimensions" class="image-dimensions" aria-live="polite"></p>
-    <canvas id="pixelCanvas"></canvas>
+    <p class="draw-hint">Drag on the canvas to draw a rectangle (image must be loaded first).</p>
+    <button type="button" id="cycleOrigin" class="origin-cycle" disabled>
+      Origin: top-left
+    </button>
+    <canvas id="pixelCanvas" tabindex="0" aria-label="Image and rectangle overlay"></canvas>
+    <pre id="rectVertices" class="rect-vertices" aria-live="polite"></pre>
   </div>
 </body>
 </html>

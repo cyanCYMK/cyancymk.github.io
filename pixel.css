@@ -7,7 +7,35 @@
 
 #pixelCanvas {
   display: block;
+  touch-action: none;
+  cursor: crosshair;
   /* Bitmap matches source pixels; no CSS scaling */
+}
+
+.draw-hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  opacity: 0.85;
+  max-width: 36rem;
+}
+
+.origin-cycle {
+  font: inherit;
+  font-size: 0.875rem;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+}
+
+.origin-cycle:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.rect-vertices {
+  margin: 0;
+  font-family: ui-monospace, monospace;
+  font-size: 0.875rem;
+  white-space: pre-wrap;
 }
 
 .image-dimensions {
