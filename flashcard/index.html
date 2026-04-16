@@ -11,18 +11,18 @@
   <script defer src="flashcard.js"></script>
 </head>
 <body>
-    <div class="main">
-        <h1>Flashcard</h1>
-        <div class="flashcard" id="flashcard">
-            <div class="flashcard-front" id="flashcard-front">
-            </div>
-            <div class="flashcard-back" id="flashcard-back">
-            </div>
-        </div>
-        <form>
-            <textarea id="answer" rows="4" cols="40" placeholder="Answer here"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+  <div class="main">
+    <h1>Flashcard</h1>
+    <div class="flashcard-scene">
+      <div class="flashcard-inner" id="flashcard" aria-live="polite">
+        <div class="flashcard-face flashcard-front" id="flashcard-front"></div>
+        <div class="flashcard-face flashcard-back" id="flashcard-back"></div>
+      </div>
     </div>
+    <form class="flashcard-form">
+      <textarea id="answer" rows="4" cols="40" placeholder="Answer here"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
